@@ -7,7 +7,7 @@ exports.DefaultOptions = {
         headless: true,
         defaultViewport: null
     },
-    webVersion: '2.2333.11',
+    webVersion: '2.2346.52',
     webVersionCache: {
         type: 'local',
     },
@@ -44,6 +44,7 @@ exports.Events = {
     CHAT_REMOVED: 'chat_removed',
     CHAT_ARCHIVED: 'chat_archived',
     MESSAGE_RECEIVED: 'message',
+    MESSAGE_CIPHERTEXT: 'message_ciphertext',
     MESSAGE_CREATE: 'message_create',
     MESSAGE_REVOKED_EVERYONE: 'message_revoke_everyone',
     MESSAGE_REVOKED_ME: 'message_revoke_me',
@@ -64,7 +65,8 @@ exports.Events = {
     STATE_CHANGED: 'change_state',
     BATTERY_CHANGED: 'change_battery',
     INCOMING_CALL: 'call',
-    REMOTE_SESSION_SAVED: 'remote_session_saved'
+    REMOTE_SESSION_SAVED: 'remote_session_saved',
+    VOTE_UPDATE: 'vote_update'
 };
 
 /**
@@ -108,6 +110,7 @@ exports.MessageTypes = {
     PROTOCOL: 'protocol',
     REACTION: 'reaction',
     TEMPLATE_BUTTON_REPLY: 'template_button_reply',
+    POLL_CREATION: 'poll_creation',
 };
 
 /**
